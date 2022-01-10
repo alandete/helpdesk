@@ -5,4 +5,4 @@ Proyecto #4 - prototipo de diseño para la obtención de la certificación en Di
 Edwin González Alandete
 
 # Codepen
-Visualice el proyecto en: 
+Visualice el proyecto en: https://codepen.io/alandete/pen/rNGZqQY
