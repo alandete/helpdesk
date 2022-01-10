@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+:root {
+  --PrimaryColor: #57A3B4;
+  --SecundaryColor: #A95658;
+  --navWidth: 200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #444;
+  background-color: #fff;
+  padding: 10% 5%;
+  margin: 0;
+}
+
+a {
+  color: var(--SecundaryColor);
+  text-decoration: none;
+}
+
+
+#navbar {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+}
+
+#navbar header {
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#navbar .nav-link {
+  display: block;
+  margin: 1rem 0;
+  padding: .5rem;
+  border-bottom: 1px solid #eee;
+}
+
+#navbar .nav-link:last-child {
+  border-bottom: none;
+}
+
+
+/*  main-section
+**********************************************/
+.main-section {
+  padding: 2%;
+}
+
+.main-section header {
+  color: #555;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.main-section header::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--PrimaryColor);
+  width: 20%;
+}
+
+
+
+
+@media (min-width: 768px) {
+  body {
+    padding: 3%;
+  }
+
+  header {
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    padding-bottom: 1rem;
+  }
+
+  .main-section header::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--PrimaryColor);
+    width: 10%;
+  }
+
+  #navbar .nav-link {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    padding: .5rem 1rem .05rem 0;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    width: var(--navWidth);
+    height: 100vh;
+    position: fixed;
+    padding: .7rem;
+    border-right: 1px solid #eee;
+  }
+
+  #navbar .nav-link {
+      display: block;
+      padding: .5rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  main {
+    padding: 0;
+    padding-left: calc(var(--navWidth) + 40px);
+  }
+  .main-section {
+    padding: 5% 2%;
+  }
+  
+}
